@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">G_Suduko</string>
+    <string name="app_name">Guardian Suduko</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_game_page">GamePage</string>
 </resources>
