@@ -12,6 +12,20 @@ public class GamePage extends AppCompatActivity {
         setContentView(R.layout.activity_game_page);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        int[][] Sudoku = SudokuGenerator.getInstance().generateGrid();
+        GameEngine.getInstance().setSudoku(Sudoku);
+
+        printSudoku(Sudoku);
+    }
+
+    private void printSudoku(int Sudoku[][]) {
+        for (int y = 0; y < 9; y++) {
+            for (int x = 0; x < 9; x++) {
+                System.out.print(Sudoku[x][y] + "|");
+            }
+            System.out.println();
+        }
     }
 
 }
