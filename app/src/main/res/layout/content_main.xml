@@ -18,15 +18,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/gu_logo"
+        android:layout_gravity="center_horizontal"
         android:src="@drawable/gu_sudoku_logo" />
 
-    <com.uk.ninja.qa.g_suduko.view.SudokuGridView
-        android:id="@+id/sudokuGridView"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:horizontalSpacing="0dp"
-        android:numColumns="9"
-        android:verticalSpacing="0dp" />
+        android:id="@+id/grids_png"
+        android:src="@drawable/grid"
+        android:layout_gravity="center_horizontal"/>
 
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/grid_buttons"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Easy"
+            android:id="@+id/btn_Easy"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Medium"
+            android:id="@+id/btn_Medium"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Hard"
+            android:id="@+id/btn_Hard"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:layout_column="2" />
+    </GridLayout>
 
 </LinearLayout>
