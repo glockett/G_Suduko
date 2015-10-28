@@ -4,66 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main"
-    android:orientation="vertical"
-    android:weightSum="1">
+    tools:showIn="@layout/activity_main">
 
     <ImageView
+        android:id="@+id/gu_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/gu_logo"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/gu_sudoku_logo" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/grids_png"
-        android:src="@drawable/grid"
-        android:layout_gravity="center_horizontal"/>
-
-    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:src="@drawable/grid" />
+
+    <GridLayout
         android:id="@+id/grid_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp">
 
         <Button
+            android:id="@+id/btn_Easy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_Easy"
-            android:id="@+id/btn_Easy"
-            android:layout_row="0"
             android:layout_column="0"
             android:layout_gravity="center_horizontal"
-            android:onClick="onClickButton"/>
+            android:layout_row="0"
+            android:onClick="onClickEasy"
+            android:text="@string/btn_Easy" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_Medium"
             android:id="@+id/btn_Medium"
-            android:layout_gravity="center_horizontal"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:onClick="onClickButton"/>
-
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/btn_Hard"
-            android:id="@+id/btn_Hard"
+            android:layout_column="1"
             android:layout_gravity="center_horizontal"
             android:layout_row="0"
+            android:onClick="onClickMedium"
+            android:text="@string/btn_Medium" />
+
+        <Button
+            android:id="@+id/btn_Hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_column="2"
-            android:onClick="onClickButton"/>
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:onClick="onClickHard"
+            android:text="@string/btn_Hard" />
     </GridLayout>
 
 </LinearLayout>

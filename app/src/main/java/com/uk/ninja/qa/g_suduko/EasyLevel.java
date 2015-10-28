@@ -3,6 +3,7 @@ package com.uk.ninja.qa.g_suduko;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+
 public class EasyLevel extends AppCompatActivity {
 
     @Override
@@ -17,13 +18,7 @@ public class EasyLevel extends AppCompatActivity {
 
         printSudoku(Sudoku);
 
-
-
-
     }
-
-
-
 
     private void printSudoku(int Sudoku[][]) {
         for (int y = 0; y < 9; y++) {
@@ -33,6 +28,5 @@ public class EasyLevel extends AppCompatActivity {
             System.out.println();
         }
     }
-
 
 }

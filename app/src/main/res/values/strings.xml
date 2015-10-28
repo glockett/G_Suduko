@@ -8,4 +8,5 @@
     <string name="btn_Medium">Medium</string>
     <string name="btn_Hard">Hard</string>
     <string name="btn_ClearGrid">Clear Grid</string>
+    <string name="title_activity_medium_level">MediumLevel</string>
 </resources>
