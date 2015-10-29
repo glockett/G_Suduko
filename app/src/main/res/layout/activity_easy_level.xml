@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8eb9d7"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    tools:context="com.uk.ninja.qa.g_suduko.EasyLevel">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,5 +22,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
+    <include layout="@layout/content_easy_level" />
 
 </android.support.design.widget.CoordinatorLayout>
