@@ -2,11 +2,12 @@
     <string name="app_name">Guardian Suduko</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_game_page">Game page</string>
-    <string name="txt_easy_level_heading">Easy level</string>
     <string name="title_activity_easy_level">Easy Level</string>
+    <string name="title_activity_medium_level">Medium Level</string>
+    <string name="title_activity_hard_level">Hard Level</string>
     <string name="btn_Easy">Easy</string>
     <string name="btn_Medium">Medium</string>
     <string name="btn_Hard">Hard</string>
     <string name="btn_ClearGrid">Clear Grid</string>
-    <string name="title_activity_medium_level">MediumLevel</string>
+
 </resources>

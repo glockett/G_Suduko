@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClickEasy(View view) {
         Intent i = new Intent(this, EasyLevel.class);
         startActivity(i);
+
     }
 
     public void onClickMedium(View view) {
@@ -32,9 +33,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickHard(View view) {
-        Intent i = new Intent(this, EasyLevel.class);
+        Intent i = new Intent(this, HardLevel.class);
         startActivity(i);
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
